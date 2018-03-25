@@ -71,83 +71,74 @@
             </ul>
         </div>
     </section>
-    <section class="benefit">
-        <div class="video">
-            <a href="#" class="play_button">
-                <img src="img/play-icon.png" alt="play">
-            </a>
+    <section class="benefits">
+        <div class="benefits__video">
+            <video width="400" height="300" controls="controls" poster="video/video.jpg">
+				<source src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"'>
+				<source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				<source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+			</video>
+			<a class="benefits__play" href="#">Играть видео</a>
         </div>
-        <div class="container">
-            <div class="benefits-block">
-                <h2 class="benefit_title">it's easy to use</h2>
-                <p class="benefit_info">Benefits credit card</p>
-                <ul class="benefits_list">
-                    <li class="benefits_list_item">
-                        <h2 class="list_item_title">Top security</h2>
-                        <hr>
-                        <p>Information in the database is published in two formats. It is available in PDF comparison
-                            according to type of credit card.</p>
-                    </li>
-                    <li class="benefits_list_item">
-                        <h2 class="list_item_title">Money saving</h2>
-                        <hr>
-                        <p>Information in the database is published in two formats. It is available in PDF comparison
-                            according to type of credit card.</p>
-                    </li>
-                    <li class="benefits_list_item">
-                        <h2 class="list_item_title">Protection</h2>
-                        <hr>
-                        <p>Information in the database is published in two formats. It is available in PDF comparison
-                            according to type of credit card.</p>
-                    </li>
-                    <li class="benefits_list_item">
-                        <h2 class="list_item_title">Organization</h2>
-                        <hr>
-                        <p>Information in the database is published in two formats. It is available in PDF comparison
-                            according to type of credit card.</p>
-                    </li>
-                    <li class="benefits_list_item">
-                        <h2 class="list_item_title">Credit history</h2>
-                        <hr>
-                        <p>Information in the database is published in two formats. It is available in PDF comparison
-                            according to type of credit card.</p>
-                    </li>
-                    <li class="benefits_list_item">
-                        <a href="#" class="read_more_button">
-                            Read More
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="benefit">
+            <h2 class="benefit__title">it's easy to use</h2>
+            <p class="benefit__info">Benefits credit card</p>
+            <ul class="benefit__list">
+                <li class="benefit__item">
+                    <h3 class="benefit__name">Top security</h3>
+                    <p>Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+                </li>
+                <li class="benefit__item">
+                    <h3>Money saving</h3>
+                    <p>Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+                </li>
+                <li class="benefit__item">
+                    <h3>Protection</h3>
+                    <p>Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+                </li>
+                <li class="benefit__item">
+                    <h3>Organization</h3>
+                    <p>Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+                </li>
+                <li class="benefit__item">
+                    <h3>Credit history</h3>
+                    <p>Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+                </li>
+            </ul>
+            <a class="benefit__button" href="#">Read More</a>
         </div>
     </section>
     <section class="service">
         <div class="container">
-            <h2 class="service_title">Useful service avaible</h2>
-            <p class="service_info">Service of credit card</p>
-            <div class="slider">
-                <ul class="service_list">
-                    <li class="service_list_item">
+            <h2 class="service__title">Useful service avaible</h2>
+            <p class="service__info">Service of credit card</p>
+            <div class="service__slider slider">
+            	<div class="slider__controls">
+            		<a class="slider__button slider__button--prev" href="#">Предыдущий</a>
+            		<a class="slider__button slider__button--next" href="#">Следующий</a>
+            	</div>
+                <ul class="slider__list">
+                    <li class="slider__item">
                         <a href="#">
-                            <img src="img/balance.png" alt="service">
+                            <img src="img/balance.png" alt="Тут нужно описание того, что ты видишь на картинке">
                             <p>Balence transform</p>
                         </a>
                     </li>
-                    <li class="service_list_item">
+                    <li class="slider__item">
                         <a href="#">
-                            <img src="img/internet-banking.png" alt="service">
+                            <img src="img/internet-banking.png" alt="Тут нужно описание того, что ты видишь на картинке">
                             <p>Internet Banking</p>
                         </a>
                     </li>
-                    <li class="service_list_item">
+                    <li class="slider__item">
                         <a href="#">
-                            <img src="img/payment.png" alt="service">
+                            <img src="img/payment.png" alt="Тут нужно описание того, что ты видишь на картинке">
                             <p>Buying Payment</p>
                         </a>
                     </li>
-                    <li class="service_list_item">
+                    <li class="slider__item">
                         <a href="#">
-                            <img src="img/air-ticket.png" alt="service">
+                            <img src="img/air-ticket.png" alt="Тут нужно описание того, что ты видишь на картинке">
                             <p>Buy Air Ticket</p>
                         </a>
                     </li>
@@ -155,20 +146,22 @@
             </div>
         </div>
     </section>
-    <section class="types_of_cards">
+    <section class="types">
         <div class="container">
             <h2 class="types_title">Useful service avaible</h2>
             <p class="types_info">Types of credit card</p>
-            <div class="slider">
-                <ul class="cards_slider">
-                    <li class="card_slide">
-                        <img src="img/card-1.png" alt="card">
-                        <h2 class="card_title">business credit cards</h2>
-                        <p class="card_info">Business credit cards are specialized credit cards issued in the name of a
-                            registered business, and typically they can only be used for business purposes. Their use
-                            has grown in recent. problems.</p>
-                        <h2>usage</h2>
-                        <table border="1">
+            <div class="types__slider slider">
+            	<div class="slider__controls">
+            		<a class="slider__button slider__button--prev" href="#">Предыдущий</a>
+            		<a class="slider__button slider__button--next" href="#">Следующий</a>
+            	</div>
+                <ul class="slider__list">
+                    <li class="slider__item card">
+                        <img src="img/card-1.png" alt="Тут нужно описание того, что ты видишь на картинке">
+                        <h3 class="card__title">business credit cards</h3>
+                        <p class="card__info">Business credit cards are specialized credit cards issued in the name of a registered business, and typically they can only be used for business purposes. Their use has grown in recent. problems.</p>
+                        <h3 class="card__title">usage</h3>
+                        <table class="card__table" border="1">
                             <tr>
                                 <td>Shipping</td>
                             </tr>
@@ -179,16 +172,16 @@
                                 <td>Travel Service</td>
                             </tr>
                         </table>
-                        <a href="#" class="apply_button">Apply Now</a>
+                        <a class="card__button" href="#">Apply Now</a>
                     </li>
-                    <li class="card_slide">
-                        <img src="img/card-2.png" alt="card">
-                        <h2 class="card_title">Secured credit cards</h2>
+                    <li class="slider__item">
+                        <img src="img/card-2.png" alt="Тут нужно описание того, что ты видишь на картинке">
+                        <h3 class="card_title">Secured credit cards</h3>
                         <p class="card_info">Business credit cards are specialized credit cards issued in the name of a
                             registered business, and typically they can only be used for business purposes. Their use
                             has grown in recent. problems.</p>
-                        <h2>usage</h2>
-                        <table border="1">
+                        <h3 class="card__title">usage</h3>
+                        <table class="card__table" border="1">
                             <tr>
                                 <td>Deposit</td>
                             </tr>
@@ -196,10 +189,10 @@
                                 <td>Credit history</td>
                             </tr>
                             <tr>
-                                <td>Saving account.</td>
+                                <td>Saving account</td>
                             </tr>
                         </table>
-                        <a href="#" class="apply_button">Apply Now</a>
+                        <a class="card__button" href="#">Apply Now</a>
                     </li>
                 </ul>
             </div>
@@ -207,24 +200,20 @@
     </section>
     <section class="countdown">
         <div class="container">
-            <ul class="countdown_list">
-                <li class="countdown_list_item">
-                    <img src="img/happyuser.png" alt="happy">
+            <ul class="countdown__list">
+                <li class="countdown__item">
                     <span>725M</span>
                     <p>Happy User</p>
                 </li>
-                <li class="countdown_list_item">
-                    <img src="img/userapp.png" alt="apprication">
+                <li class="countdown__item">
                     <span>700M</span>
                     <p>User Apprication</p>
                 </li>
-                <li class="countdown_list_item">
-                    <img src="img/pay-service.png" alt="pay service">
+                <li class="countdown__item">
                     <span>10M+</span>
                     <p>Payment Service</p>
                 </li>
-                <li class="countdown_list_item">
-                    <img src="img/feedback.png" alt="feedback">
+                <li class="countdown__item">
                     <span>600M</span>
                     <p>User Feedback</p>
                 </li>
@@ -233,51 +222,37 @@
     </section>
     <section class="faq">
         <div class="container">
-            <h2 class="faq_title">We are ready to help you</h2>
-            <p class="faq_info">Frequently asked questions</p>
-            <div class="faq-services">
-                <a href="#" class="service-button">
-                    Banking Services
-                </a>
-                <a href="#" class="service-button">
-                    Security
-                </a>
-                <a href="#" class="service-button">
-                    Money Deposit
-                </a>
-                <a href="#" class="service-button">
-                    Custome Payment
-                </a>
-                <a href="#" class="service-button">
-                    Bus/Air Ticket
-                </a>
-                <a href="#" class="service-button">
-                    Online Banking
-                </a>
+            <h2 class="faq__title">We are ready to help you</h2>
+            <p class="faq__info">Frequently asked questions</p>
+            <div class="faq__types">
+                <a class="faq__link" href="#">Banking Services</a>
+                <a class="faq__link" href="#">Security</a>
+                <a class="faq__link" href="#">Money Deposit</a>
+                <a class="faq__link" href="#">Custome Payment</a>
+                <a class="faq__link" href="#">Bus/Air Ticket</a>
+                <a class="faq__link" href="#">Online Banking</a>
             </div>
-            <div class="main-faq">
-                <!--Не знаю как лучше сделать это, после совета Катьки-какашки пойму:)-->
+            <div class="faq__answers">
+                <!-- Катька думает, что тут лучше пока сделать кучу блочков с вопросами и один вопрос (который раскрыт) с ответом :) можно списком пока - там посмотрим -->
             </div>
         </div>
     </section>
-    <div class="form">
+    <section class="contacts">
         <div class="container">
             <h2>Your Message</h2>
-            <form action="">
-                <label for="name"> Your Name</label>
-                <input type="name" id="name">
+            <form class="contacts__form" action="#">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Your Name>
                 <label for="email">Email Address</label>
-                <input type="email" id="email">
+                <input type="email" id="email" placeholder="Email Address">
                 <label for="subject">Subject</label>
-                <input type="text" id="subject">
+                <input type="text" id="subject" placeholder="Subject">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10">
-
-                </textarea>
+                <textarea name="message" id="message"placeholder="Message"></textarea>
                 <input type="submit" value="Submit" id="submit-button">
             </form>
         </div>
-    </div>
+    </section>
 </main>
 
 <footer class="main-footer">
