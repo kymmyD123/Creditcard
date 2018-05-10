@@ -1,0 +1,103 @@
+body {
+    min-width: 1200px;
+}
+
+body, ul, li, p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-header {
+    background: linear-gradient(to top right, #0b4bec, #071d68);
+}
+
+.main-menu {
+    background-color: rgba(11, 74, 232, 0.5);
+    width: 100%;
+}
+
+.main-menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__image {
+    margin: 35px 0;
+}
+
+.navigation__list {
+    display: flex;
+    list-style: none;
+    margin: 50px 0;
+}
+
+.navigation__item {
+    margin-right: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navigation__item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.slogan {
+    padding-bottom: 607px;
+    text-align: center;
+}
+
+.slogan__wrapper {
+    position: relative;
+    width: 970px;
+    margin: 0 auto;
+}
+
+.slogan__title {
+    padding: 193px 0 35px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.slogan__title, .slogan__info {
+    text-align: center;
+    color: #fff;
+}
+
+.slogan__info {
+    margin-bottom: 60px;
+}
+
+.slogan__button {
+    padding: 18px 48px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    color: #0b4bec;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size:  14px;
+}
+
+.slogan__wrapper::before {
+    /*nе знаю как лучше сделать это!*/
+    content: "";
+    position: absolute;
+    display: block;
+    width: 570px;
+    height: 509px;
+    top: 530px;
+    left: 175px;
+    background-image: url("../img/creditcard.png");
+    background-position: 0 0;
+}
