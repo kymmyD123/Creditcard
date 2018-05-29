@@ -180,10 +180,10 @@ ul {
 }
 
 .method__item img {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
-.method__item__active {
+.method__item--active {
     padding-top: 90px;
     padding-bottom: 90px;
 
@@ -192,7 +192,7 @@ ul {
     background: linear-gradient(to top left, #071d68, #0b4bec);
 }
 
-.method__item__active p {
+.method__item--active p {
     color: #eeecec;
 }
 
@@ -200,14 +200,21 @@ ul {
     display: flex;
 }
 
+.benefit__container {
+    width: 50%;
+    padding: 0 17px;
+}
+
 .video {
-    padding-bottom: 500px;
-    padding-top: 500px;
-    padding-left: 350px;
     width: 50%;
 
     background-image: url("../img/video.jpg");
     background-repeat: no-repeat;
+}
+
+.play_button {
+    display: block;
+    position: absolute;
 }
 
 .benefits-block {
@@ -312,4 +319,8 @@ ul {
     margin-top: 70px;
 
     text-align: center;
+}
+
+.service_list_item {
+    display: block;
 }
