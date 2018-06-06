@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins:400,600,700|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins:400,600,700|Raleway:300i,400,600,700"
+          rel="stylesheet">
     <title>Creditcard</title>
 </head>
 <body>
@@ -286,18 +288,26 @@
             <form action="">
                 <div class="form__wrapper">
                     <div class="text-input">
-                        <label class="form__label" for="name"> Your Name</label>
-                        <input type="name" id="name">
-                        <label class="form__label" for="email">Email Address</label>
-                        <input type="email" id="email">
-                        <label class="form__label" for="subject">Subject</label>
-                        <input type="text" id="subject">
+                        <div class="label__wrapper">
+                            <label class="form__label" for="name"> Your Name</label>
+                            <input type="name" id="name">
+                        </div>
+                        <div class="label__wrapper">
+                            <label class="form__label" for="email">Email Address</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="label__wrapper">
+                            <label class="form__label" for="subject">Subject</label>
+                            <input type="text" id="subject">
+                        </div>
                     </div>
                     <div class="button-wrapper">
-                        <label class="form__label" for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10">
+                        <div class="label__wrapper">
+                            <label class="form__label" for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10">
 
                         </textarea>
+                        </div>
                         <input type="submit" value="Submit" id="submit-button">
                     </div>
                 </div>
@@ -316,64 +326,72 @@
                     I will give you a complete account of the system, and expound the actual teachings of the great
                     explorer of the truth, the master-builder connection society.
                 </p>
-                <span>P :  +6985 7458 423</span>
-                <span>E :  bankingsave@gmail.com</span>
-                <span>Address :  486 Wilson Street, Irvine, CA 92614</span>
+                <div class="contacts__wrapper">
+                    <p>P : +6985 7458 423</p>
+                    <p>E : bankingsave@gmail.com</p>
+                </div>
+                <p class="adress">Address : 486 Wilson Street, Irvine, CA 92614</p>
             </div>
             <div class="footer_soc">
                 <h2 class="footer_soc_title">Comminute</h2>
                 <ul>
-                    <li>
-                        <a href="">facebook</a>
+                    <li class="soc__link_list">
+                        <a href="#">facebook</a>
                     </li>
-                    <li>
-                        <a href="">instagram</a>
+                    <li class="soc__link_list">
+                        <a href="#">instagram</a>
                     </li>
-                    <li>
-                        <a href="">twitter</a>
+                    <li class="soc__link_list">
+                        <a href="#">twitter</a>
                     </li>
-                    <li>
-                        <a href="">pinterest</a>
+                    <li class="soc__link_list">
+                        <a href="#">pinterest</a>
                     </li>
-                    <li>
-                        <a href="">linkedin</a>
+                    <li class="soc__link_list">
+                        <a href="#">linkedin</a>
                     </li>
-                    <li>
-                        <a href="">youtube</a>
+                    <li class="soc__link_list">
+                        <a href="#">youtube</a>
                     </li>
                 </ul>
             </div>
             <div class="footer_user_link">
                 <h2 class="footer_user_title">Userful Link</h2>
                 <ul>
-                    <li>
+                    <li class="user__link__list">
                         <a href="">Cards</a>
                     </li>
-                    <li>
+                    <li class="user__link__list">
                         <a href="">Services</a>
                     </li>
-                    <li>
+                    <li class="user__link__list">
                         <a href="">Banking</a>
                     </li>
-                    <li>
+                    <li class="user__link__list">
                         <a href="">FAQ</a>
                     </li>
-                    <li>
+                    <li class="user__link__list">
                         <a href="">Blog</a>
                     </li>
-                    <li>
+                    <li class="user__link__list">
                         <a href="">Contact</a>
                     </li>
                 </ul>
             </div>
             <div class="footer_subscribe_form">
                 <h2 class="footer_subscribe_title">Subscribe Newsletter</h2>
+
                 <form action="">
-                    <input class="footer_email" type="text">
-                    <input class="footer_submit_button" type="submit">
+                    <div class="footer__form__wrapper">
+                        <div class="footer__label__wrapper">
+                            <label for="text">Enter Email To Get Notification</label>
+                            <input class="footer_email" id="text" type="text">
+                        </div>
+                        <input class="footer_submit_button" type="submit">
+                    </div>
                 </form>
-            </div>
-            <div class="footer_inst_photo">
+
+
                 <h2 class="footer_inst_title">Instagram Post</h2>
                 <div class="inst_photo">
                     <img src="img/inst-1.png" alt="">
