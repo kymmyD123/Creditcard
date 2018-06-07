@@ -19,21 +19,21 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Cards</a>
+                        <a class="navigation__link" href="#cards">Cards</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Service</a>
+                        <a class="navigation__link" href="#service">Service</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Banking</a>
+                        <a class="navigation__link" href="#bank">Banking</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Faq</a>
+                        <a class="navigation__link" href="#faq">Faq</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Contact</a>
+                        <a class="navigation__link" href="#contact">Contact</a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item__active">
                         <a class="navigation__link" href="#">Create Account</a>
                     </li>
                 </ul>
@@ -57,7 +57,7 @@
 </header>
 
 <main>
-    <section class="method">
+    <section class="method" id="cards">
         <div class="container">
             <h2 class="method__title">Easy process</h2>
             <p class="method__info">To ger a credit card</p>
@@ -125,7 +125,7 @@
             </a>
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <div class="container">
             <h2 class="service_title">Useful service avaible</h2>
             <p class="service_info">Service of credit card</p>
@@ -159,7 +159,7 @@
             </div>
         </div>
     </section>
-    <section class="types_of_cards">
+    <section class="types_of_cards" id="bank">
         <div class="container">
             <h2 class="types_title">Useful service avaible</h2>
             <p class="types_info">Types of credit card</p>
@@ -173,17 +173,17 @@
                             registered business, and typically they can only be used for business purposes. Their use
                             has grown in recent. problems.</p>
                         <h2 class="table__title">usage</h2>
-                        <table>
-                            <tr>
-                                <td>Shipping</td>
-                            </tr>
-                            <tr>
-                                <td>Office supplies</td>
-                            </tr>
-                            <tr>
-                                <td>Travel Service</td>
-                            </tr>
-                        </table>
+                        <ul class="usage__table__list">
+                            <li class="table__list__item">
+                                <p>Shipping</p>
+                            </li>
+                            <li class="table__list__item">
+                                <p>Office supplies</p>
+                            </li>
+                            <li class="table__list__item">
+                                <p>Travel Service</p>
+                            </li>
+                        </ul>
                         <a href="#" class="apply_button">Apply Now</a>
                     </div>
                 </li>
@@ -195,17 +195,17 @@
                             registered business, and typically they can only be used for business purposes. Their use
                             has grown in recent. problems.</p>
                         <h2 class="table__title">usage</h2>
-                        <table>
-                            <tr>
-                                <td>Deposit</td>
-                            </tr>
-                            <tr>
-                                <td>Credit history</td>
-                            </tr>
-                            <tr>
-                                <td>Saving account.</td>
-                            </tr>
-                        </table>
+                        <ul class="usage__table__list">
+                            <li class="table__list__item">
+                                <p>Deposit</p>
+                            </li>
+                            <li class="table__list__item">
+                                <p>Credit history</p>
+                            </li>
+                            <li class="table__list__item">
+                                <p>Saving account.</p>
+                            </li>
+                        </ul>
                         <a href="#" class="apply_button">Apply Now</a>
                     </div>
                 </li>
@@ -239,7 +239,7 @@
             </ul>
         </div>
     </section>
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
             <h2 class="faq_title">We are ready to help you</h2>
             <p class="faq_info">Frequently asked questions</p>
@@ -281,7 +281,7 @@
             </div>
         </div>
     </section>
-    <div class="form">
+    <div class="form"  id="contact">
         <div class="container">
             <h2>Your Message</h2>
 
@@ -308,7 +308,7 @@
 
                         </textarea>
                         </div>
-                        <input type="submit" value="Submit" id="submit-button">
+                        <input class="submit__button" type="submit" value="Submit" id="submit-button">
                     </div>
                 </div>
             </form>

@@ -45,6 +45,7 @@ ul {
 }
 
 .navigation__item {
+
     margin-right: 35px;
 
     font-family: 'Poppins', sans-serif;
@@ -54,8 +55,34 @@ ul {
 }
 
 .navigation__item a {
+    padding: 10px 13px;
+
     color: #ffffff;
     text-decoration: none;
+}
+
+.navigation__item a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation__item__active a {
+    padding: 10px 13px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #0b4bec;
+    text-decoration: none;
+
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.navigation__item__active a:hover {
+    color: #0b4dff;
+
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .slogan {
@@ -113,6 +140,12 @@ ul {
 
     background-color: #ffffff;
     border-radius: 30px;
+}
+
+.slogan__button:hover {
+    color: #0b4dff;
+
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .method {
@@ -298,6 +331,10 @@ ul {
     background-color: #0b4bec;
 }
 
+.read_more_button:hover {
+    background-color: rgba(11, 75, 236, 0.8);
+}
+
 .service {
     padding-top: 235px;
     padding-bottom: 200px;
@@ -335,10 +372,16 @@ ul {
 
 }
 .service_list_item a {
+    position: relative;
+
     text-decoration: none;
 }
 
 .service_list_item p {
+    width: 268px;
+    position: absolute;
+    top: 14px;
+
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 42px;
@@ -421,24 +464,24 @@ ul {
     color: #333333;
 }
 
-table {
+.usage__table__list {
+    margin-top: 10px;
     margin-bottom: 50px;
+    display: flex;
 }
 
-tr {
-    display: inline-block;
-}
-
-td {
+.table__list__item {
     width: 169px;
     padding: 3px;
 
+    border: 1px solid #b3b3b3;
+}
+
+.table__list__item p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 42px;
     color: #808080;
-
-    border: 1px solid #b3b3b3;
 }
 
 .apply_button {
@@ -454,6 +497,10 @@ td {
     color: #ffffff;
 
     background-color: #0b4bec;
+}
+
+.apply_button:hover {
+    background-color: rgba(11, 75, 236, 0.8);
 }
 
 .countdown {
@@ -607,7 +654,7 @@ td {
 }
 
 .text-input input {
-    margin-bottom: 36px;
+    margin-bottom: 54px;
 }
 
 .form input {
@@ -634,8 +681,10 @@ td {
 }
 
 .form textarea {
+    padding: 20px;
+
     display: block;
-    width: 550px;
+    width: 508px;
     margin-bottom: 35px;
 }
 
@@ -647,6 +696,13 @@ td {
     color: #ffffff;
     
     background-color: #0b4bec;
+    border: none;
+
+    cursor: pointer;
+}
+
+.submit__button:hover {
+    background-color: rgba(11, 75, 236, 0.8);
 }
 
 .label__wrapper {
@@ -728,6 +784,10 @@ td {
     color: #ffffff;
 }
 
+.soc__link_list a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .soc__link_list a::before {
     content: ">>";
     display: block;
@@ -755,6 +815,10 @@ td {
     font-size: 14px;
     line-height: 32px;
     color: #ffffff;
+}
+
+.user__link__list a:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .user__link__list a::before {
@@ -789,10 +853,19 @@ td {
     width: 50px;
     height: 40px;
 
+    font-size: 0;
+
+    background-image: url("../img/sub_send.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
     background-color: #ffffff;
     border: none;
 
     cursor: pointer;
+}
+
+.footer_submit_button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .footer__label__wrapper {
