@@ -33,7 +33,7 @@
                     <li class="navigation__item">
                         <a class="navigation__link" href="#contact">Contact</a>
                     </li>
-                    <li class="navigation__item__active">
+                    <li class="navigation__item navigation__item--active">
                         <a class="navigation__link" href="#">Create Account</a>
                     </li>
                 </ul>
@@ -134,25 +134,25 @@
                     <li class="service_list_item">
                         <a href="#">
                             <img src="img/balance.png" alt="service">
-                            <p>Balence transform</p>
+                            <span>Balence transform</span>
                         </a>
                     </li>
                     <li class="service_list_item">
                         <a href="#">
                             <img src="img/internet-banking.png" alt="service">
-                            <p>Internet Banking</p>
+                            <span>Internet Banking</span>
                         </a>
                     </li>
                     <li class="service_list_item">
                         <a href="#">
                             <img src="img/payment.png" alt="service">
-                            <p>Buying Payment</p>
+                            <span>Buying Payment</span>
                         </a>
                     </li>
                     <li class="service_list_item">
                         <a href="#">
                             <img src="img/air-ticket.png" alt="service">
-                            <p>Buy Air Ticket</p>
+                            <span>Buy Air Ticket</span>
                         </a>
                     </li>
                 </ul>
@@ -285,12 +285,12 @@
         <div class="container">
             <h2>Your Message</h2>
 
-            <form action="">
+            <form action="#" method="post">
                 <div class="form__wrapper">
                     <div class="text-input">
                         <div class="label__wrapper">
-                            <label class="form__label" for="name"> Your Name</label>
-                            <input type="name" id="name">
+                            <label class="form__label" for="name">Your Name</label>
+                            <input type="text" id="name">
                         </div>
                         <div class="label__wrapper">
                             <label class="form__label" for="email">Email Address</label>
@@ -304,9 +304,7 @@
                     <div class="button-wrapper">
                         <div class="label__wrapper">
                             <label class="form__label" for="message">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10">
-
-                        </textarea>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
                         </div>
                         <input class="submit__button" type="submit" value="Submit" id="submit-button">
                     </div>
@@ -330,7 +328,7 @@
                     <p>P : +6985 7458 423</p>
                     <p>E : bankingsave@gmail.com</p>
                 </div>
-                <p class="adress">Address : 486 Wilson Street, Irvine, CA 92614</p>
+                <p class="address">Address : 486 Wilson Street, Irvine, CA 92614</p>
             </div>
             <div class="footer_soc">
                 <h2 class="footer_soc_title">Comminute</h2>
@@ -381,7 +379,7 @@
             <div class="footer_subscribe_form">
                 <h2 class="footer_subscribe_title">Subscribe Newsletter</h2>
 
-                <form action="">
+                <form action="#">
                     <div class="footer__form__wrapper">
                         <div class="footer__label__wrapper">
                             <label for="text">Enter Email To Get Notification</label>

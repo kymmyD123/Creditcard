@@ -1,14 +1,22 @@
 body {
     min-width: 1200px;
+    margin: 0;
+    padding: 0;
 }
 
-body, ul, li, p, h1, h2, h3 {
+h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+p {
+  margin: 0;
 }
 
 .container {
@@ -18,7 +26,7 @@ ul {
 }
 
 .main-header {
-    background: linear-gradient(to top right, #0b4bec, #071d68);
+    background-image: linear-gradient(to top right, #0b4bec, #071d68);
 }
 
 .main-menu {
@@ -45,10 +53,9 @@ ul {
 }
 
 .navigation__item {
-
     margin-right: 35px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 14px;
@@ -65,10 +72,10 @@ ul {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.navigation__item__active a {
-    padding: 10px 13px;
+.navigation__item--active a {
+    padding: 5px 13px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 14px;
@@ -79,7 +86,7 @@ ul {
     border-radius: 15px;
 }
 
-.navigation__item__active a:hover {
+.navigation__item--active a:hover {
     color: #0b4dff;
 
     background-color: rgba(255, 255, 255, 0.8);
@@ -95,6 +102,16 @@ ul {
     background-repeat: no-repeat;
 }
 
+.slogan__image {
+    width: 570px;
+    height: 509px;
+    margin: 0 auto;
+}
+
+.slogan__image img {
+    display: block;
+}
+
 .slogan .container {
     position: relative;
 
@@ -105,7 +122,7 @@ ul {
 .slogan__title {
     margin-bottom: 35px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 40px;
 }
@@ -116,7 +133,7 @@ ul {
 }
 
 .slogan__info {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 400;
 }
 
@@ -134,7 +151,7 @@ ul {
     color: #0b4bec;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 14px;
 
@@ -158,7 +175,7 @@ ul {
 .method__title, .method__info {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .method__title {
@@ -198,7 +215,7 @@ ul {
 .method__item h3 {
     padding-bottom: 35px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -206,7 +223,7 @@ ul {
 
 .method__item p {
     color: #808080;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
@@ -221,8 +238,8 @@ ul {
     padding-bottom: 90px;
 
     color: #ffffff;
-    
-    background: linear-gradient(to top left, #071d68, #0b4bec);
+
+    background-image: linear-gradient(to top left, #071d68, #0b4bec);
 }
 
 .method__item--active p {
@@ -234,25 +251,30 @@ ul {
 }
 
 .benefit__container {
-    margin-left: 100px;
-    margin-top: 150px;
     width: 50%;
-    padding: 0 17px;
+    padding-left: 100px;
+    padding-right: 40px;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 .video {
-    width: 50%;
     position: relative;
+
+    width: 50%;
 
     background-image: url("../img/video.jpg");
     background-repeat: no-repeat;
 }
 
 .play_button {
-    display: block;
     position: absolute;
-    top: 500px;
-    left: 390px;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    transform: translate(-50%, -50%);
 }
 
 .benefits-block {
@@ -261,9 +283,10 @@ ul {
     margin-top: 100px;
 }
 
-.benefit_title, .benefit_info {
+.benefit_title,
+.benefit_info {
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .benefit_title {
@@ -273,7 +296,7 @@ ul {
 }
 
 .benefit_info {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
     font-size: 30px;
     font-weight: 700;
@@ -285,7 +308,7 @@ ul {
     margin-bottom: 20px;
 
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     line-height: 40px;
     color: #333333;
@@ -309,7 +332,7 @@ ul {
 }
 
 .benefits_list_item p {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     line-height: 28px;
     color: #808080;
@@ -324,7 +347,7 @@ ul {
 
     text-align: center;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #ffffff;
 
     border-radius: 10px;
@@ -342,7 +365,7 @@ ul {
 
 .service_title, .service_info {
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .service_title {
@@ -369,20 +392,24 @@ ul {
 
 .service_list_item {
     display: block;
-
 }
+
 .service_list_item a {
     position: relative;
+
+    display: block;
 
     text-decoration: none;
 }
 
-.service_list_item p {
-    width: 268px;
+.service_list_item span {
     position: absolute;
-    top: 14px;
+    bottom: -39px;
+    left: 0;
 
-    font-family: 'Poppins', sans-serif;
+    width: 268px;
+
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     line-height: 42px;
     color: #333333;
@@ -398,9 +425,10 @@ ul {
     padding-bottom: 250px;
 }
 
-.types_title, .types_info {
+.types_title,
+.types_info {
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .types_title {
@@ -437,7 +465,7 @@ ul {
     margin-bottom: 20px;
 
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     line-height: 42px;
     font-weight: 700;
@@ -449,7 +477,7 @@ ul {
     margin: 0 auto;
     margin-bottom: 45px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     line-height: 28px;
     color: #808080;
@@ -457,7 +485,7 @@ ul {
 
 .table__title {
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     line-height: 42px;
     font-weight: 700;
@@ -478,7 +506,7 @@ ul {
 }
 
 .table__list__item p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 42px;
     color: #808080;
@@ -491,7 +519,7 @@ ul {
     padding-bottom: 10px;
 
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 28px;
     color: #ffffff;
@@ -517,6 +545,7 @@ ul {
 
 .countdown_list_item {
     width: 220px;
+
     text-align: center;
 }
 
@@ -529,7 +558,7 @@ ul {
 .subscribed {
     margin-bottom: 20px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 52px;
     line-height: 40px;
@@ -537,26 +566,27 @@ ul {
 }
 
 .subscribing-class {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     line-height: 40px;
     color: #ffffff;
 }
 
 .faq {
-    background-color: #f3f2f2;
+    padding-top: 188px;
+    padding-bottom: 150px;
 
+    background-color: #f3f2f2;
 }
 
-.faq_title, .faq_info {
+.faq_title,
+.faq_info {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .faq_title {
-    padding-top: 188px;
-
     font-size: 24px;
     font-weight: 400;
     color: #808080;
@@ -573,7 +603,6 @@ ul {
 .faq-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 150px;
 }
 
 .faq-services {
@@ -587,7 +616,7 @@ ul {
 
     text-align: center;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 42px;
@@ -606,11 +635,11 @@ ul {
     padding: 8px 30px;
 
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 28px;
     color: #808080;
-    
+
     background-color: #ffffff;
     border: 1px solid #dad9d9;
 }
@@ -621,12 +650,12 @@ ul {
     padding-left: 30px;
 
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 42px;
     color: #808080;
-    
+
     background-color: #ffffff;
     border: 1px solid #dad9d9;
 }
@@ -647,7 +676,7 @@ ul {
 .form h2 {
     margin-bottom: 58px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 30px;
     font-weight: 700;
     color: #333333;
@@ -669,7 +698,7 @@ ul {
     top: 15px;
     left: 19px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     line-height: 28px;
     color: #808080;
@@ -692,9 +721,9 @@ ul {
     display: block;
     padding: 20px 0;
     font-size: 14px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #ffffff;
-    
+
     background-color: #0b4bec;
     border: none;
 
@@ -733,7 +762,7 @@ ul {
 .footer_about_content {
     margin-bottom: 40px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     line-height: 26px;
 }
@@ -743,13 +772,13 @@ ul {
     justify-content: space-between;
     margin-bottom: 15px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 28px;
 }
 
-.adress {
-    font-family: 'Poppins', sans-serif;
+.address {
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 28px;
 }
@@ -764,7 +793,7 @@ ul {
 }
 
 .footer_soc_title, .footer_user_title, .footer_subscribe_title, .footer_inst_title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 17px;
     line-height: 28px;
@@ -778,7 +807,7 @@ ul {
     position: relative;
 
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     line-height: 32px;
     color: #ffffff;
@@ -811,7 +840,7 @@ ul {
     position: relative;
 
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     line-height: 32px;
     color: #ffffff;
@@ -823,12 +852,14 @@ ul {
 
 .user__link__list a::before {
     content: ">>";
-    display: block;
-    width: 10px;
-    height: 10px;
+
     position: absolute;
     top: -8px;
     left: -20px;
+
+    display: block;
+    width: 10px;
+    height: 10px;
 }
 
 .footer__form__wrapper {
@@ -877,7 +908,7 @@ ul {
     top: 7px;
     left: 16px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 12px;
@@ -895,6 +926,7 @@ ul {
 
 .main-footer {
     position: relative;
+
     padding-top: 220px;
     padding-bottom: 50px;
 
@@ -906,7 +938,7 @@ ul {
 }
 
 .copy {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 28px;
     text-align: center;
